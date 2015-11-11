@@ -72,41 +72,41 @@
     
     /* block parsing */
     
-    [defaultParser addHeaderParsingWithLevel:1 formattingBlock:^(NSMutableAttributedString *attributedString, NSRange range) {
-        [attributedString addAttribute:NSFontAttributeName
-                                 value:weakParser.h1Font
-                                 range:range];
-    }];
+    // [defaultParser addHeaderParsingWithLevel:1 formattingBlock:^(NSMutableAttributedString *attributedString, NSRange range) {
+    //     [attributedString addAttribute:NSFontAttributeName
+    //                              value:weakParser.h1Font
+    //                              range:range];
+    // }];
     
-    [defaultParser addHeaderParsingWithLevel:2 formattingBlock:^(NSMutableAttributedString *attributedString, NSRange range) {
-        [attributedString addAttribute:NSFontAttributeName
-                                 value:weakParser.h2Font
-                                 range:range];
-    }];
+    // [defaultParser addHeaderParsingWithLevel:2 formattingBlock:^(NSMutableAttributedString *attributedString, NSRange range) {
+    //     [attributedString addAttribute:NSFontAttributeName
+    //                              value:weakParser.h2Font
+    //                              range:range];
+    // }];
     
-    [defaultParser addHeaderParsingWithLevel:3 formattingBlock:^(NSMutableAttributedString *attributedString, NSRange range) {
-        [attributedString addAttribute:NSFontAttributeName
-                                 value:weakParser.h3Font
-                                 range:range];
-    }];
+    // [defaultParser addHeaderParsingWithLevel:3 formattingBlock:^(NSMutableAttributedString *attributedString, NSRange range) {
+    //     [attributedString addAttribute:NSFontAttributeName
+    //                              value:weakParser.h3Font
+    //                              range:range];
+    // }];
     
-    [defaultParser addHeaderParsingWithLevel:4 formattingBlock:^(NSMutableAttributedString *attributedString, NSRange range) {
-        [attributedString addAttribute:NSFontAttributeName
-                                 value:weakParser.h4Font
-                                 range:range];
-    }];
+    // [defaultParser addHeaderParsingWithLevel:4 formattingBlock:^(NSMutableAttributedString *attributedString, NSRange range) {
+    //     [attributedString addAttribute:NSFontAttributeName
+    //                              value:weakParser.h4Font
+    //                              range:range];
+    // }];
     
-    [defaultParser addHeaderParsingWithLevel:5 formattingBlock:^(NSMutableAttributedString *attributedString, NSRange range) {
-        [attributedString addAttribute:NSFontAttributeName
-                                 value:weakParser.h5Font
-                                 range:range];
-    }];
+    // [defaultParser addHeaderParsingWithLevel:5 formattingBlock:^(NSMutableAttributedString *attributedString, NSRange range) {
+    //     [attributedString addAttribute:NSFontAttributeName
+    //                              value:weakParser.h5Font
+    //                              range:range];
+    // }];
     
-    [defaultParser addHeaderParsingWithLevel:6 formattingBlock:^(NSMutableAttributedString *attributedString, NSRange range) {
-        [attributedString addAttribute:NSFontAttributeName
-                                 value:weakParser.h6Font
-                                 range:range];
-    }];
+    // [defaultParser addHeaderParsingWithLevel:6 formattingBlock:^(NSMutableAttributedString *attributedString, NSRange range) {
+    //     [attributedString addAttribute:NSFontAttributeName
+    //                              value:weakParser.h6Font
+    //                              range:range];
+    // }];
     
     [defaultParser addListParsingWithFormattingBlock:^(NSMutableAttributedString *attributedString, NSRange range) {
         [attributedString replaceCharactersInRange:range withString:@"•\t"];
@@ -131,14 +131,14 @@
     
     /* inline parsing */
     
-    [defaultParser addMonospacedParsingWithFormattingBlock:^(NSMutableAttributedString *attributedString, NSRange range) {
-        [attributedString addAttribute:NSFontAttributeName
-                                 value:weakParser.monospaceFont
-                                 range:range];
-        [attributedString addAttribute:NSForegroundColorAttributeName
-                                 value:weakParser.monospaceTextColor
-                                 range:range];
-    }];
+    // [defaultParser addMonospacedParsingWithFormattingBlock:^(NSMutableAttributedString *attributedString, NSRange range) {
+    //     [attributedString addAttribute:NSFontAttributeName
+    //                              value:weakParser.monospaceFont
+    //                              range:range];
+    //     [attributedString addAttribute:NSForegroundColorAttributeName
+    //                              value:weakParser.monospaceTextColor
+    //                              range:range];
+    // }];
     
     [defaultParser addStrongParsingWithFormattingBlock:^(NSMutableAttributedString *attributedString, NSRange range) {
         [attributedString addAttribute:NSFontAttributeName
